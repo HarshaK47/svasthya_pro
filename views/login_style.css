@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: linear-gradient(120deg,#2980b0,#8e44ad);
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+
+.login-form {
+
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    width:20em;
+    height:24em;
+    margin-top: -18em; /*set to a negative number 1/2 of your height*/
+    margin-left: 12em; /*set to a negative number 1/2 of your width*/
+
+    translate: translate(-50%, -50%);
+    width: 400px;
+    background: linear-gradient(120deg,#8dcbec,#e6e780);
+    border-radius: 10px;
+
+    /* width: 300px;
+    margin: 0 auto;*/
+    font-family: Tahoma, Geneva, sans-serif;
+    text-align: center; 
+}
+
+.check{
+    font-size: 13px;
+}
+
+.login-form form{
+
+    padding: 0 40px;
+    box-sizing: border-box;
+
+}
+
+.login-form h1 {
+    text-align: center;
+    color: #4d4d4d;
+    font-size: 24px;
+    padding: 20px 0 20px 0;
+}
+.login-form input[type="password"],
+.login-form input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    border-radius: 25px;
+    border: 1px solid #dddddd;
+    margin-bottom: 15px;
+    box-sizing:border-box;
+}
+
+
+
+/* .custom-control-label{
+    margin-left: 25px;
+} */
+
+
+.register{
+    text-align: center;
+}
+
+.login-form input[type="submit"] {
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: #2691d9;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+
+.login-form input[type="submit"]:hover{
+    border-color: #eb66d5;
+    transition: .25s;
+    background-color: #d467c2;
+}

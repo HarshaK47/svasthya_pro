@@ -1,0 +1,10 @@
+.colored-section {
+    background-color: #2980b0;
+    color: #fff;
+  }
+
+  input[type=text] {
+    background-color: #2980b0;
+    color: #fff;
+    border: none;
+  }

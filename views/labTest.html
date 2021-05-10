@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Lab Testing</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="labTest.css">
+
+</head>
+
+<body style="background-image: url('bg_doc.jpg')">
+
+  <div class="labTest-form">
+    <h1>Lab Testing</h1>
+    <form action="/labTest" method="POST" autocomplete="off">
+      <input type="text" list="tests" name="TestName" placeholder="Test Name" required>
+      <datalist id="tests">
+        <option value="Complete Blood Count">
+        <option value="Prothrombin Time PT">      
+      </datalist>
+      <input type="text" list="cities" name="City" placeholder="Preferred City" required>
+      <datalist id="cities">
+        <option value="Chandigarh">
+        <option value="Panchkula">     
+        <option value="Mohali">
+      </datalist>
+
+      <!-- <input type="text" list="timings" name="Timings" placeholder="Timings" required>
+      <datalist id="timings">
+        <option value="10:00">
+        <option value="11:00">
+        <option value="12:00">
+        <option value="14:00">
+        <option value="15:00">
+        <option value="16:00">
+        <option value="17:00">
+        <option value="18:00">
+        <option value="19:00">
+        <option value="20:00">        
+      </datalist> -->
+      
+      <br><br>
+      <input type="submit" value="Check Availability">
+    </form>
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

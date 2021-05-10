@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Confirm Appointment</title>
+    <!-- Google Fonts -->
+   <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+
+   <!-- CSS Stylesheets -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <link rel="stylesheet" type="text/css" href="time-lab.css">
+ 
+   <!-- Font Awesome -->
+   <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+ 
+   <!-- Bootstrap Scripts -->
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="lab-form">
+    <h1>Book Lab Slot</h1>
+    <form  action="/labs/Appointment/check" method="POST" autocomplete="off">
+      
+      <input type="text" name="ID" placeholder="Enter Lab ID" required><br>
+      
+      <input type="text"  name="userID" value="" placeholder="User ID" required><br>
+      <input type="date"  name="Date" placeholder="date" required><br>
+      <input type="text" list="timings" name="Timings" placeholder="Timings" required><br>
+
+      <datalist id="timings">
+        <option value="1000">
+        <option value="1100">
+        <option value="1200">
+        <option value="1400">
+        <option value="1500">
+        <option value="1600">
+        <option value="1700">
+        <option value="1800">
+        <option value="1900">
+        <option value="2000">
+      </datalist>
+      
+
+
+      <input type="submit" value="Check Availability">
+      
+    </form>
+    </div>
+</body>
+</html>
